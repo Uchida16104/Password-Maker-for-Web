@@ -14,10 +14,10 @@ When running the application, it'll be made html file automatically, and written
 Example(input) :
 
 ````
-8 (digits)
-16 (times)
-N (answer)
-1 (second)
+8 #digits
+16 #times
+N #answer
+1 #second
 ````
 
 Example(output) :
