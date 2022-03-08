@@ -24,7 +24,7 @@ Example(output) :
 
 ````
 Password List
-"%Y-%m-%d %H:%M:%S.%f"
+%Y-%m-%d %H:%M:%S.%f
 
 t9bt55FX
 UDsTevxq
