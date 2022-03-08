@@ -4,7 +4,7 @@ This is created by python and export as html in real time.
 
 When running the application, it'll be made html file automatically, and written passwords list and current time. 
 
-<i>html page which is exported update every 10 seconds.</i>
+<i>html page which is exported updates every 10 seconds.</i>
 
 <li>first input value >> password digits you'd like to make</li>
 <li>second input value >> password times it'll be exported in html</li>
