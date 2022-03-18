@@ -1,0 +1,23 @@
+name: Password Maker for Web 2
+
+on:
+  push:
+    branches: 
+      - master
+  workflow_dispatch:
+
+jobs:
+  pytest:
+    name: Run tests with action-sample
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Setup Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.9'
+          architecture: 'x64'
+      - name: Get Python version
+        run: python -V
+      - name: Run Python
+        run: python Password-Maker-for-Web.py
