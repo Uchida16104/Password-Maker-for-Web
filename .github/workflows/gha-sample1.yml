@@ -21,5 +21,3 @@ jobs:
         run: python -V
       - name: Run Python file1
         run: python Password-Maker-for-Web.py
-      - name: Run Python file2
-        run: python PasswordMakerForWeb.py
