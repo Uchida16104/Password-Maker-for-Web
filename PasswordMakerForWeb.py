@@ -14,7 +14,7 @@ def blockPrint():
     sys.stdout = open(os.devnull, 'w')
 def enablePrint():
     sys.stdout = sys.__stdout__
-f = open("index.html",'a+')
+f = open("index.md",'a+')
 sys.stdout = f
 f.write("<!DOCtype html>")
 f.flush()
