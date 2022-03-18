@@ -59,13 +59,13 @@ f.write("\n")
 f.flush()
 f.write(dt_now)
 f.flush()
-x=input()
+x=8
 f.write("\n")
 f.flush()
 blockPrint()
 print(s)
 enablePrint()
-y=input()
+y=16
 f.write("<table>")
 f.flush()
 f.write("\n")
@@ -100,7 +100,7 @@ blockPrint()
 print("<br>"+c)
 print("<br>")
 enablePrint()
-answer=input()
+answer="Y"
 f.write("\n")
 f.flush()
 while answer == "Y":
@@ -109,11 +109,11 @@ while answer == "Y":
         print(q)
         print("<br>")
         enablePrint()
-        x=input()
+        x=8
         blockPrint()
         print(s)
         enablePrint()
-        y=input()
+        y=16
         f.write("<p>")
         f.flush()
         f.write("</p>")
@@ -143,14 +143,14 @@ while answer == "Y":
         blockPrint()
         print("<br>"+c)
         enablePrint()
-        answer=input()
+        answer="N"
 if answer == "N":
     blockPrint()
     print("<br>"+b)
     enablePrint()
     f.write("\n")
     f.flush()
-    a=input()
+    a=1
     f.write("</body>")
     f.flush()
     f.write("\n")
