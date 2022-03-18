@@ -20,4 +20,4 @@ jobs:
       - name: Get Python version
         run: python -V
       - name: Run Python
-        run: python Password-Maker-for-Web.py
+        run: python PasswordMakerForWeb.py
