@@ -1,4 +1,4 @@
-name: Action Sample
+name: Password Maker for Web 1
 
 on:
   push:
