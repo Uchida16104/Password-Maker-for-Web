@@ -14,7 +14,8 @@ jobs:
     steps:
       - uses: actions/checkout@v2
         with:
-          ref: "master"
+         token: "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"
+         ref: "master"
       - name: Setup Python
         uses: actions/setup-python@v2
         with:
