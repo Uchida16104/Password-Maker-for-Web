@@ -14,31 +14,31 @@ dt_now = str(dt_now)
 print("Password List")
 print(dt_now)
 print(q)
-x=int(input())
+x=8
 print(s)
-y=int(input())
+y=16
 for k in range(int(y)):
   sys.stdout.write("\n")
   for i in range(int(x)):
     sys.stdout.write(random.choice(p))
 print("\n"+c)
-answer=str(input())
+answer="Y"
 print("\n")
 while answer == "Y":
     for j in range(1):
         print(q)
-        x=int(input())
+        x=8
         print(s)
-        y=int(input())
+        y=16
         for k in range(int(y)):
           sys.stdout.write("\n")
           for i in range(int(x)):
             sys.stdout.write(random.choice(p))
         sys.stdout.write("\n"+c)
         sys.stdout.write("\n")
-        answer=str(input())
+        answer="Y"
 if answer == "N":
     sys.stdout.write("\n"+b)
     sys.stdout.write("\n")
-    a=int(input())
+    a=1
     time.sleep(int(a))
