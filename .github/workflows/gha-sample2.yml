@@ -36,9 +36,6 @@ jobs:
           echo "${{ secrets.MY_ACTIONS_DEPLOY_KEY }}" > ~/.ssh/id_rsa
           chmod 400 ~/.ssh/id_rsa
       - name: Push
-        env:
-          GITHUB_USER: "Uchida16104"
-          GITHUB_EMAIL: "uho02741358@gmail.com"
         run: |
           git config --local user.name "Uchida16104"
           git config --local user.email "uho02741358@gmail.com"
