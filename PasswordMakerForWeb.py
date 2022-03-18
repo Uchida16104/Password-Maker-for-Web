@@ -17,7 +17,7 @@ def enablePrint():
     sys.stdout = sys.__stdout__
 f = open("index.html",'a+')
 sys.stdout = f
-subprocess.run('open index.html',shell=True)
+subprocess.run('xdg-open index.html',shell=True)
 f.write("<!DOCtype html>")
 f.flush()
 f.write("<head>")
