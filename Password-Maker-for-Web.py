@@ -36,7 +36,7 @@ while answer == "Y":
             sys.stdout.write(random.choice(p))
         sys.stdout.write("\n"+c)
         sys.stdout.write("\n")
-        answer="Y"
+        answer="N"
 if answer == "N":
     sys.stdout.write("\n"+b)
     sys.stdout.write("\n")
