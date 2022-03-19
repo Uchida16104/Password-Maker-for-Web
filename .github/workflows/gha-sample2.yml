@@ -38,13 +38,13 @@ jobs:
           chmod 400 ~/.ssh/id_rsa
       - name: Push
         env:
-          GITHUB_USER: "Uchida16104"
+          GITHUB_USER: "HU"
           GITHUB_EMAIL: "uho02741358@gmail.com"
         run: |
           git add -N .
               if ! git diff --exit-code --quiet
               then
-                git config user.name "Uchida16104"
+                git config user.name "HU"
                 git config user.email "uho02741358@gmail.com"
                 git remote set-url origin git@github.com:Password-Maker-for-Web.git
                 git add .
