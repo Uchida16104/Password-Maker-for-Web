@@ -2,7 +2,7 @@ name: Password Maker for Web 1
 
 on:
   schedule:
-    - cron:  '* * * * *'
+    - cron:  "*/1 * * * *"
 
 jobs:
   pytest:
