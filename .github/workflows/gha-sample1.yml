@@ -3,10 +3,6 @@ name: Password Maker for Web 1
 on:
   schedule:
     - cron:  '* * * * *'
-  push:
-    branches: 
-      - master
-  workflow_dispatch:
 
 jobs:
   pytest:
