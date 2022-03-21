@@ -46,7 +46,7 @@ jobs:
               then
                 git config --global user.name "HU"
                 git config --global user.email "uho02741358@gmail.com"
-                git remote set-url origin git@github.com:Password-Maker-for-Web.git
+                git remote set-url origin https://github.com/Password-Maker-for-Web
                 git add .
                 git commit -m "auto rebuilding site"
                 git pull
