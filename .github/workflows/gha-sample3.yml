@@ -1,0 +1,30 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - uses: actions/setup-python@v1
+        with:
+          python-version: ‘3.9’
+          architecture : ‘x64’
+      - name: Build pages
+        run: |
+          make html
+          touch build/html
+      - name: Get Python version
+        run: |
+          python -V
+      - name: Run Python
+        run: |
+          python password-maker-for-web.py
+      - name: Deploy to GitHub Pages
+        uses: maxheld83/ghpages@v0.2.1
+        env:
+          BUILD_DIR: build/html
+          GH_PAT: ${{ secrets.GH_PAT }}
