@@ -16,7 +16,6 @@ jobs:
       - name: Build pages
         run: |
           make html
-          touch build/html
       - name: Get Python version
         run: |
           python -V
