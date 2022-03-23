@@ -13,9 +13,6 @@ jobs:
         with:
           python-version: '3.9'
           architecture : 'x64'
-      - name: Build pages
-        run: |
-          make html
       - name: Get Python version
         run: |
           python -V
