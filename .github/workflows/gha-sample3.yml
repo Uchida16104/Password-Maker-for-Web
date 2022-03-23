@@ -22,7 +22,7 @@ jobs:
           python -V
       - name: Run Python
         run: |
-          python password-maker-for-web.py
+          python index.py
       - name: Deploy to GitHub Pages
         uses: maxheld83/ghpages@v0.2.1
         env:
