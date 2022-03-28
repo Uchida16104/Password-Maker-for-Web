@@ -34,7 +34,7 @@ jobs:
         run: |
           mkdir ~/.ssh
           ssh-keyscan -t rsa github.com >> ~/.ssh/known_hosts
-          echo "${{ secrets.MY_ACTIONS_DEPLOY_KEY }}" > ~/.ssh/id_rsa
+          echo "${{ secrets.PASSWORDMAKERFORWEB }}" > ~/.ssh/id_rsa
           chmod 777 ~/.ssh/id_rsa
       - name: Push
         env:
@@ -44,9 +44,9 @@ jobs:
           git add -N .
               if ! git diff --exit-code --quiet
               then
-                git config --global user.name "HU"
-                git config --global user.email "uho02741358@gmail.com"
-                git remote set-url origin https://github.com/Password-Maker-for-Web
+                git config --global user.name "${GITHUB_USER}"
+                git config --global user.email "${GITHUB_EMAIL}"
+                git remote set-url origin https://${GITHUB_ACTOR}:${{secrets.GITHUB_TOKEN}}@github.com/${GITHUB_REPOSITORY}.git
                 git add .
                 git commit -m "auto rebuilding site"
                 git pull
