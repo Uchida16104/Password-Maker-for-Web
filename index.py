@@ -14,7 +14,7 @@ def blockPrint():
     sys.stdout = open(os.devnull, 'w')
 def enablePrint():
     sys.stdout = sys.__stdout__
-f = open("passwordmaker.html",'w')
+f = open("passwordmaker.",'w')
 sys.stdout = f
 f.write("<!DOCtype html>")
 f.flush()
