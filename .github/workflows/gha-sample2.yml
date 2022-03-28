@@ -38,8 +38,8 @@ jobs:
           chmod 777 ~/.ssh/id_rsa
       - name: Push
         env:
-          GITHUB_USER: "HU"
-          GITHUB_EMAIL: "uho02741358@gmail.com"
+          GITHUB_USER: "${GITHUB_USER}"
+          GITHUB_EMAIL: "${GITHUB_EMAIL}"
         run: |
           git add -N .
               if ! git diff --exit-code --quiet
